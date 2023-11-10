@@ -12,6 +12,7 @@
     <artifactId>SpringSecurityExample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>SpringSecurityExample</name>
+    <packaging>war</packaging>
     <description>SpringSecurityExample</description>
     <properties>
         <java.version>11</java.version>
@@ -25,7 +26,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+             <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-starter-tomcat</artifactId>
+               <scope>provided</scope> <!-- 안되어 있는 경우 변경! -->
+        </dependency>     
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-websocket</artifactId>
@@ -128,11 +133,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <plugin>
-               <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-war-plugin</artifactId>
-               <version>3.2.3</version> <!-- Use the latest version -->
-             </plugin>
         </plugins>
     </build>
 
