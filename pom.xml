@@ -68,6 +68,7 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>3.0.0</version>
         </dependency>
+             
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
@@ -127,6 +128,11 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-war-plugin</artifactId>
+               <version>3.2.3</version> <!-- Use the latest version -->
+             </plugin>
         </plugins>
     </build>
 
