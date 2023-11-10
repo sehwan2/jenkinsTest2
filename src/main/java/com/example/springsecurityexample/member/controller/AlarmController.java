@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.List;
-
+//Jenkins Poll SCM Test
 @RestController
 @RequiredArgsConstructor
 public class AlarmController {
